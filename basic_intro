@@ -1,0 +1,11 @@
+***Counting the number of lines in churn emails***
+ def number_of_lines():
+  fhand = open('/cxldata/datasets/project/mbox-short.txt')
+  inp = fhand.read()
+  fhand.close()
+  count = 0
+  for c in inp:
+    if c == '\n'
+      count +=1
+  return count
+      
