@@ -1,3 +1,13 @@
+
+Location of the text file
+/cxldata/datasets/project/mbox-short.txt
+
+How to see initial first few lines
+head -n 15 /cxldata/datasets/project/mbox-short.txt
+---Reading the complete file into one string------
+fhand = open('/cxldata/datasets/project/mbox-short.txt')
+
+
 ***Counting the number of lines in churn emails***
  def number_of_lines():
   fhand = open('/cxldata/datasets/project/mbox-short.txt')
@@ -8,4 +18,16 @@
     if c == '\n'
       count +=1
   return count
+  
+ ***We use the method startswith to select only those lines with desired prefix***
+ 
+ ----Below method to print lines starting with from ----
+ fhand = open('/cxldata/datasets/project/mbox-short.txt')
+ #inp = fhand.read()
+ count = 0
+ for line in fhand:
+  
+ 
+  
+
       
